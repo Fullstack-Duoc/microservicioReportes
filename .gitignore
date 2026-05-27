@@ -1,16 +1,18 @@
+# ====================================================================
+# CONFIGURACIÓN ESPECÍFICA DE JAVA Y SPRING BOOT
+# ====================================================================
 # Compiled class file
 *.class
 
-# Log file
+# Carpetas de compilación pesadas (¡CRÍTICO!)
+target/
+work/
+bin/
+
+# Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package Files (Entregables)
 *.jar
 *.war
 *.nar
@@ -19,6 +21,31 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# ====================================================================
+# SEGURIDAD Y HERRAMIENTAS DE DESARROLLO (IDE)
+# ====================================================================
+# Bloqueo total de credenciales y perfiles de VS Code
+.vscode/
+.env
+
+# Archivos ocultos del ecosistema Java en VS Code
+.factorypath
+.project
+.classpath
+.settings/
+
+# BlueJ & J2ME
+*.ctxt
+.mtj.tmp/
+
+# Crash logs
 hs_err_pid*
 replay_pid*
+
+# ====================================================================
+# SISTEMA OPERATIVO (MACOS)
+# ====================================================================
+# Exclusivo para tu MacBook Air
+.DS_Store
+.AppleDouble
+.LSOverride
